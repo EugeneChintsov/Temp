@@ -20,7 +20,7 @@ def get_diff(data1, data2):
             if key in data1 and key in data2:
                 if data1[key] == data2[key]:
                     result[key] = {'unchanged':data1[key]}
-            
-                result[key] = {'changed': {'delete':data1[key], 'add':data2[key]}}
+                else:
+                    result[key] = {'changed': {'delete':data1[key], 'add':data2[key]}}
 
     return result
