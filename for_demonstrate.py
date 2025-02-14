@@ -9,7 +9,7 @@ def get_diff(data1, data2):
             # и наверное nested в словаре не нужен вообще? 
 
                 # if (isinstance(data1.get(key, 'Nope'), dict) and isinstance(data2.get(key, 'Nope'), dict)):
-                # result = {'nested':get_diff3(data1[key], data2[key])}
+                # result = {'nested':get_diff(data1[key], data2[key])}
         
         # if not (isinstance(data1[key], dict) and isinstance(data2[key], dict)):
             if key not in data1:
